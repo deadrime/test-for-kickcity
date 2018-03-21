@@ -1,0 +1,9 @@
+{
+  "extends": "react-app",
+  "rules": {
+    "comma-dangle": ["warn", "never"],
+    "indent": ["warn", 4],
+    "quotes": ["warn", "single"],
+    "space-before-function-paren": ["warn", "always"]
+  }
+}
