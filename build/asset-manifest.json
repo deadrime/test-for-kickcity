@@ -1,8 +1,10 @@
 {
   "main.css": "static/css/main.74ac273e.css",
   "main.css.map": "static/css/main.74ac273e.css.map",
-  "main.js": "static/js/main.6b3de20a.js",
-  "main.js.map": "static/js/main.6b3de20a.js.map",
+  "main.js": "static/js/main.ec1ea430.js",
+  "main.js.map": "static/js/main.ec1ea430.js.map",
+  "static\\media\\alarm-bell-hover.png": "static/media/alarm-bell-hover.0f2d90dc.png",
+  "static\\media\\arrow-hover.png": "static/media/arrow-hover.d43bbbe6.png",
   "static\\media\\bg.png": "static/media/bg.b3f41979.png",
   "static\\media\\search-hover.png": "static/media/search-hover.019e7f77.png"
 }

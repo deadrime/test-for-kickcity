@@ -5,21 +5,20 @@ import iconHeartHover from './assets/heart-button-hover.png'
 import iconTokenSrc from './assets/token.png'
 
 const EventItem = styled.article`
-    cursor: pointer;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 20px;
-    height: 268px;
+    padding: 1.429em;
+    height: 19.143em;
     box-sizing: border-box;
     background-color: var(--text-dark-grey);
     background: ${props =>
         props.img ? 'url('+ props.img+')' : null};
     background-size: cover;
-    border-radius: 10px;
+    border-radius: 0.714em;
     transition: box-shadow .3s;
     &:hover {
-        box-shadow: 0 0 30px 0 #aabece;
+        box-shadow: 0 0 2.143em 0 #aabece;
     }
 `
 
@@ -30,7 +29,7 @@ const TagsWrapper = styled.div`
 `
 
 const TagStyle = css`
-    padding-right: 14px;
+    padding-right: 0.875em;
 `
 
 const Content = styled.div`
@@ -58,6 +57,7 @@ const Footer = styled.footer`
 `
 
 const IconHeart = styled.div`
+    cursor: pointer;
     width: 14px;
     height: 12px;
     padding: 4px;
@@ -68,6 +68,7 @@ const IconHeart = styled.div`
 `
 
 const Free = styled.span`
+    cursor: pointer;
     color: #fff;
     background: #43e690;
     border-radius: 10px;
@@ -76,6 +77,7 @@ const Free = styled.span`
 `
 
 const TokenIcon = styled.span`
+    cursor: pointer;
     width: 19px;
     height: 19px;
     background: #f9cc55 url(${iconTokenSrc}) center no-repeat;

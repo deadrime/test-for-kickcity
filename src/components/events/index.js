@@ -1,11 +1,16 @@
 import React, { Component } from 'react';
 import styled, {css} from 'react-emotion';
 import FireIconSrc from './assets/fire.png'
+import ArrowIconSrc from './assets/arrow.png'
+import ArrowIconHoverSrc from './assets/arrow-hover.png'
 import Event from './event'
 
 const EventsHeader = styled.header`
     padding-top: 76px;
+    padding-bottom: 46px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 `
 
 const Title = css`
@@ -13,7 +18,6 @@ const Title = css`
     display: block;
     position: relative;
     margin: 0;
-    margin-bottom: 46px;
     font-size: 24px;
     color: var(--text-dark-grey);
     &::before {
@@ -73,12 +77,37 @@ const Wrapper = styled.div`
     margin: 0 auto;
     padding-bottom: 100px;
 `
+
+const ArrowIcon = styled.span`
+    display: inline-block;
+    margin-left: 1em;
+    width: 22px;
+    height: 7px;
+    background: url(${ArrowIconSrc});
+`
+
+const MoreBtn = styled.button`
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+    font-size: 14px;
+    color: var(--text-light-grey);
+    &:hover {
+        color: var(--text-dark-grey);
+        & ${ArrowIcon} {
+            background: url(${ArrowIconHoverSrc});
+        }
+    }
+`
+
 class Events extends Component {
     render () {
         return(
             <Wrapper>
                 <EventsHeader> 
                     <h1 className={Title}>Trending еvents</h1>
+                    <MoreBtn>More <ArrowIcon/></MoreBtn>
                 </EventsHeader>
                 <div className={EventWrapper}>
                     <Event
