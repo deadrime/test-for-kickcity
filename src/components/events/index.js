@@ -5,9 +5,17 @@ import ArrowIconSrc from './assets/arrow.png'
 import ArrowIconHoverSrc from './assets/arrow-hover.png'
 import Event from './event'
 
+const Wrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1.429em 7.143em 1.429em;
+`
+
 const EventsHeader = styled.header`
-    padding-top: 76px;
-    padding-bottom: 46px;
+    padding-top: 5.429em;
+    padding-bottom: 3.286em;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,7 +26,7 @@ const Title = css`
     display: block;
     position: relative;
     margin: 0;
-    font-size: 24px;
+    font-size: 1.714em;
     color: var(--text-dark-grey);
     &::before {
         content: '';
@@ -33,8 +41,8 @@ const Title = css`
 
 const EventWrapper = css`
     display: grid;
-    grid-gap: 16px;
-    min-height: 550px;
+    grid-gap: 1.143em;
+    min-height: 39.286em;
     padding: 0;
     grid-template-columns: repeat(1, 1fr);
     grid-template-areas:
@@ -70,13 +78,6 @@ const EventWrapper = css`
       "small3 large2 large2 small4";
   }
 `
-const Wrapper = styled.div`
-    display: flex;
-    flex-direction: column;
-    max-width: 1280px;
-    margin: 0 auto;
-    padding-bottom: 100px;
-`
 
 const ArrowIcon = styled.span`
     display: inline-block;
@@ -91,7 +92,7 @@ const MoreBtn = styled.button`
     background: none;
     border: none;
     padding: 0;
-    font-size: 14px;
+    font-size: inherit;
     color: var(--text-light-grey);
     &:hover {
         color: var(--text-dark-grey);

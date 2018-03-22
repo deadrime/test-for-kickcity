@@ -4,6 +4,7 @@
     "comma-dangle": ["warn", "never"],
     "indent": ["warn", 4],
     "quotes": ["warn", "single"],
-    "space-before-function-paren": ["warn", "always"]
+    "space-before-function-paren": ["warn", "always"],
+    "linebreak-style": ["warn", "windows"]
   }
 }

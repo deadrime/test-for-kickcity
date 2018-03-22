@@ -15,12 +15,12 @@ const SearchInput = styled.input`
     box-shadow: -1px 0 0 #f1f6f9;
     display: flex;
     flex: 1 0;
-    min-width: 160px;
     height: 100%;
     padding: 0 7.233%;
+    margin-left: 2.857em;
     border: none;
     font-family: 'Open Sans';
-    font-size: 14px;
+    font-size: inherit;
     outline: none;
     &:placeholder {
         color: var(--text-dark-grey);
@@ -30,9 +30,10 @@ const SearchInput = styled.input`
     }
 `
 const SearchButton = styled.button`
+    cursor: pointer;
     font-family: 'Open Sans';
     font-weight: 600;
-    font-size: 14px;
+    font-size: inherit;
     background: none;
     padding: 0 5.063%;
     border: none;

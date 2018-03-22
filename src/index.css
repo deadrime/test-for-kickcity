@@ -4,6 +4,7 @@ body, html {
   --main-font: 'Open Sans', Sans-serif;
   --base-font-size: 14px;
   --primary-blue: #009ad6;
+  --background-color: #f1f6f9;
   --text-dark-grey: #3b3f4a;
   --text-light-grey: #8b98ab;
 }
@@ -13,5 +14,5 @@ body {
   padding: 0;
   font-family: var(--main-font);
   font-size: var(--base-font-size);
-  min-width: 1280px;
+  background: var(--background-color);
 }

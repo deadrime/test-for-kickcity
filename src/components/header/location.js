@@ -6,7 +6,6 @@ import filter from 'lodash/filter'
 
 const LeftMenuLocation = styled.div`
     font-weight: 600;
-    font-size: 14px;
     position: relative;
     display: flex;
     align-items: center;
@@ -14,7 +13,8 @@ const LeftMenuLocation = styled.div`
     display: flex;
     align-items: center;
     cursor: pointer;
-    padding: 0 3.857em;
+    padding-left: 3.857em;
+    padding-right: 1em;
     white-space: nowrap;
     &::before {
         height: 20px;
@@ -31,7 +31,7 @@ const LeftMenuLocationButton = styled.button`
     border: none;
     width: 9px;
     height: 5px;
-    padding: 10px;
+    padding: 0.714em;
     outline:none;
     transform: ${props =>
         props.active ? 'rotate(180deg)' : null};
@@ -45,16 +45,16 @@ const DropdownMenu = styled.div`
     display: ${props =>
         props.visible ? 'flex' : 'none'};
     flex-direction: column;
-    padding: 20px 0;
+    padding: 1.429em 0;
     white-space: nowrap;
     box-shadow: 0px 4px 9px 0px rgba(207,222,234,0.45), inset 0px 8px 8px -8px rgba(207,222,234,0.45);
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 0.286em;
+    border-bottom-right-radius: 0.286em;
     & > span {
         text-decoration: none;
         color: var(--text-light-grey);
         font-weight: normal;
-        padding: 8px 32px;
+        padding: 0.571em 2.286em;
         &:hover {
             color: var(--text-dark-grey)
         }

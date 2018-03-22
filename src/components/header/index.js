@@ -15,7 +15,7 @@ const HeaderStyle = css`
 `
 
 const LogoImg = styled.img`
-    padding: 21px 40px 21px 0;
+    padding: 1.5em 2.857em 1.5em 0;
 `
 
 const Navigation = styled.nav`
@@ -28,7 +28,6 @@ const Navigation = styled.nav`
 export const LeftMenuLink = styled.a`
     position: relative;
     cursor: pointer;
-    font-size: 14px;
     text-decoration: none;
     padding: 0 0.714em;
     margin: 0 1.143em;

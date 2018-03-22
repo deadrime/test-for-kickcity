@@ -12,14 +12,14 @@ const Wrapper = styled.div`
 const Content = styled.div`
     max-width: 1280px;
     margin: 0 auto;
-    padding-left: 8.3%;
+    padding-left: 8.571em;
     box-sizing: border-box;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     box-shadow: 0 1px 0 0 #e0ebf3;
-    padding-bottom: 80px;
+    padding-bottom: 5.714em;
 `
 
 const Title = styled.h1`
@@ -33,7 +33,7 @@ const Title = styled.h1`
 const Subtitle = styled.p`
     margin: 20px 0 0 0;
     color: var(--text-light-grey);
-    padding-bottom: 42px;
+    padding-bottom: 3em;
 `
 
 const PromoBtn = styled.button`
@@ -42,8 +42,8 @@ const PromoBtn = styled.button`
     background: var(--primary-blue);
     border: none;
     color: #fff;
-    width: 134px;
-    height: 50px;
+    width: 9.571em;
+    height: 3.571em;
     border-radius: 26px;
     letter-spacing: 0.03em;
     font-size: 14px;

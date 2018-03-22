@@ -11,7 +11,7 @@ const Wrapper = styled.div`
 
 const NewEvents = styled.button`
     cursor: pointer;
-    width: 60px;
+    width: 4.286em;
     padding: 0;
     margin-right: 1em;
     border: none;
@@ -42,7 +42,7 @@ const CreateEventBtn = styled.button`
     background: none;
     font-family: var(--main-font);
     color: var(--text-light-grey);
-    font-size: 14px;
+    font-size: inherit;
     font-weight: 600;
     padding: 0 2.429em;
     box-shadow: -1px 0 0 #f1f6f9, 1px 0 0 #f1f6f9;
@@ -59,7 +59,6 @@ const UserInfo = styled.div`
     padding-left: 1.429em;
     justify-content: center;
     align-items: center;
-    font-size: 14px;
     color: var(--text-light-grey);
     & > span {
         letter-spacing: 0.05em;

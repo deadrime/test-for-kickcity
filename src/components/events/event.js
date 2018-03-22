@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled, {css} from 'react-emotion';
-import iconHeart from './assets/heart-button.png'
-import iconHeartHover from './assets/heart-button-hover.png'
+import iconHeartSrc from './assets/heart-button.png'
+import iconHeartHoverSrc from './assets/heart-button-hover.png'
 import iconTokenSrc from './assets/token.png'
 
 const EventItem = styled.article`
@@ -56,14 +56,14 @@ const Footer = styled.footer`
     justify-content: space-between;
 `
 
-const IconHeart = styled.div`
+const IconHeart = styled.span`
     cursor: pointer;
     width: 14px;
     height: 12px;
     padding: 4px;
-    background: url(${iconHeart}) center no-repeat;
+    background: url(${iconHeartSrc}) center no-repeat;
     &:hover {
-        background-image: url(${iconHeartHover});
+        background-image: url(${iconHeartHoverSrc});
     }
 `
 
@@ -71,9 +71,9 @@ const Free = styled.span`
     cursor: pointer;
     color: #fff;
     background: #43e690;
-    border-radius: 10px;
-    padding: 0px 12px;
-    margin-left: 16px;
+    border-radius: 0.714em;
+    padding: 0px 0.857em;
+    margin-left: 1.143em;
 `
 
 const TokenIcon = styled.span`

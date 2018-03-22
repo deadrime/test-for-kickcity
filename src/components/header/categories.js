@@ -8,14 +8,14 @@ export const DropdownMenu = styled.div`
     top: 100%;
     display: ${props =>
         props.visible ? 'flex' : 'none'};
-    left: -32px;
-    padding: 20px 0;
+    left: -1.429em;
+    padding: 1.429em 0;
     white-space: nowrap;
     z-index: 2;
     background: #fcfefd;
     box-shadow: 0px 4px 9px 0px rgba(207,222,234,0.45), inset 0px 8px 8px -8px rgba(207,222,234,0.45);
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 0.286em;
+    border-bottom-right-radius: 0.286em;
 `
 
 export const LinksColumn = styled.div`
@@ -24,7 +24,7 @@ export const LinksColumn = styled.div`
     & > span {
         color: var(--text-light-grey);
         font-weight: normal;
-        padding: 8px 32px;
+        padding: 0.571em 2.286em;
         &:hover {
             color: var(--text-dark-grey);
         }
