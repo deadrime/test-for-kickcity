@@ -3,6 +3,7 @@ import styled from 'react-emotion'
 import PlaceImgSrc from './assets/place.png'
 import ArrowDownImgSrc from './assets/arrow-down.png'
 import filter from 'lodash/filter'
+import map from 'lodash/map'
 
 const LeftMenuLocation = styled.div`
     font-weight: 600;
@@ -79,7 +80,7 @@ class Location extends Component {
         })
     }
     render () {
-        let LocationsList = filter(this.state.locations, (item) => item !== this.state.currentLocation).map((name) =>
+        let LocationsList = map(filter(this.state.locations, (item) => item !== this.state.currentLocation), (name) =>
             <span 
                 key={name}
                 value={name} 
